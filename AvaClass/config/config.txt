@@ -1,0 +1,25 @@
+DIRECTORY_SRC=src.main.java
+PACKAGE_CODE=com.alvaro.freelancer.cpt_api
+
+PACKAGE_REPOSITORIES= repositories
+POST_FIX_REPOSITORY=Repository
+
+PACKAGE_MODELS=models
+POST_FIX_MODEL=Model
+
+PACKAGE_CONTROLLERS=controllers
+POST_FIX_CONTROLLER=Controller
+
+PACKAGE_RESOURCES=resources
+POST_FIX_RESOURCE=Resource
+
+PACKAGE_RESOLVERS=resolvers
+POST_FIX_RESOLVER=Resolver
+
+PACKAGE_SERVICES=services
+POST_FIX_SERVICE=Service
+
+PACKAGE_DTOS=dtos
+POST_FIX_DTO=DTO
+
+TYPE_BD=mysql
