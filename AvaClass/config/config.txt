@@ -1,5 +1,5 @@
 DIRECTORY_SRC=src.main.java
-PACKAGE_CODE=com.alvaro.freelancer.cpt_api
+PACKAGE_CODE=com.caixaFacil.caixaFacil_api
 
 PACKAGE_REPOSITORIES= repositories
 POST_FIX_REPOSITORY=Repository
