@@ -38,33 +38,33 @@ public class {nome_resource_completo} {{
     private {nome_service} {nome_service_letra_minuscula};
 
     @GetMapping("{{id}}")
-    public ResponseEntity<{nome_output_dto}> findById(@PathVariable Long id) {{
-        var dto = {nome_service_letra_minuscula}.findByIdDTO(id);
-        return ResponseEntity.ok(dto);
+    @ResponseStatus(HttpStatus.OK)
+    public {nome_output_dto} findById(@PathVariable Long id) {{
+        return {nome_service_letra_minuscula}.findByIdDTO(id);
     }}
 
     @GetMapping
-    public ResponseEntity<Page<{nome_output_dto}>> findAll(Pageable pageable) {{
-        var dtos = {nome_service_letra_minuscula}.findAll(pageable);
-        return ResponseEntity.ok(dtos);
+    @ResponseStatus(HttpStatus.OK)
+    public Page<{nome_output_dto}> findAll(Pageable pageable) {{
+        return {nome_service_letra_minuscula}.findAll(pageable);
     }}
 
     @PostMapping
-    public ResponseEntity<{nome_output_dto}> save(@RequestBody @Valid {nome_input_dto} dto) {{
-        var saved = {nome_service_letra_minuscula}.save(dto);
-        return ResponseEntity.status(HttpStatus.CREATED).body(saved);
+    @ResponseStatus(HttpStatus.CREATED)
+    public {nome_output_dto} save(@RequestBody @Valid {nome_input_dto} dto) {{
+        return {nome_service_letra_minuscula}.save(dto);
     }}
 
     @PutMapping("{{id}}")
-    public ResponseEntity<{nome_output_dto}> update(@PathVariable Long id, @RequestBody @Valid {nome_input_dto} dto) {{
-        var updated = {nome_service_letra_minuscula}.update(id, dto);
-        return ResponseEntity.ok(updated);
+    @ResponseStatus(HttpStatus.OK)
+    public {nome_output_dto} update(@PathVariable Long id, @RequestBody @Valid {nome_input_dto} dto) {{
+        return {nome_service_letra_minuscula}.update(id, dto);
     }}
 
     @DeleteMapping("{{id}}")
-    public ResponseEntity<Object> delete(@PathVariable Long id) {{
+    @ResponseStatus(HttpStatus.NOT_CONTENT)
+    public void delete(@PathVariable Long id) {{
         {nome_service_letra_minuscula}.delete(id);
-        return ResponseEntity.noContent().build();
     }}
 }}
 """
