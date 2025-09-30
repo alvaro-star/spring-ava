@@ -61,11 +61,7 @@ package {package}.{directoryDto};
 import {package}.{directoryModel}.{nome_classe_completo};
 
 public record {nome_input_dto_completo}(
-        Long id
 ) {{
-    public {nome_input_dto_completo}({nome_classe_completo} model) {{
-        this(model.getId());
-    }}
 }}
 
 """
