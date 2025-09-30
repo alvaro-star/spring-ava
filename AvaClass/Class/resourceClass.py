@@ -30,12 +30,14 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("/{nome_classe.lower() + 's'}")
+@RequiredArgsConstructor
 public class {nome_resource_completo} {{
-    @Autowired
-    private {nome_service} {nome_service_letra_minuscula};
+    
+    private final {nome_service} {nome_service_letra_minuscula};
 
     @GetMapping("{{id}}")
     @ResponseStatus(HttpStatus.OK)
@@ -62,7 +64,7 @@ public class {nome_resource_completo} {{
     }}
 
     @DeleteMapping("{{id}}")
-    @ResponseStatus(HttpStatus.NOT_CONTENT)
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable Long id) {{
         {nome_service_letra_minuscula}.delete(id);
     }}

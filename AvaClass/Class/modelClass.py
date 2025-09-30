@@ -17,7 +17,6 @@ def create_model(confEnv: ConfEnv, nome_classe):
 package {package}.{directoryModel};
 
 import {package}.{directoryDto}.{nome_input_dto_completo};
-import {package}.{directoryDto}.{nome_output_dto_completo};
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

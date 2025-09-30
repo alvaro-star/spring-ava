@@ -30,15 +30,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import lombok.RequiredArgsConstructor;
 
 @Service
+@RequiredArgsConstructor
 public class {nome_classe_completo} {{
-    private final {nome_repository} {nome_repository_letra_minuscula};
 
-    @Autowired
-    public {nome_classe_completo}({nome_repository} {nome_repository_letra_minuscula}) {{
-        this.{nome_repository_letra_minuscula} = {nome_repository_letra_minuscula};
-    }}
+    private final {nome_repository} {nome_repository_letra_minuscula};
 
     public {nome_model} findById(Long id) {{
         var model = {nome_repository_letra_minuscula}.findById(id);
